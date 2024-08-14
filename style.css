@@ -199,7 +199,7 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  width: 42vw;
+  width: full;
 }
 
 .title {
@@ -375,7 +375,7 @@ article .icon {
 
 #projects {
   position: relative;
-  margin-top: 25vh;
+  margin-top: 50vh;
 }
 
 .color-container {
