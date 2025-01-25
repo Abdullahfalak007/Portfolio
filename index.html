@@ -1,90 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Abdullah</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./assets/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./assets/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./assets/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./assets/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./assets/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./assets/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./assets/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./assets/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./assets/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Muhammad Abdullah</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Abdullah</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Muhammad Abdullah</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Muhammad Abdullah</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container slideInLeft">
+      <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text slideInRight">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Muhammad Abdullah</h1>
+      <p class="section__text__p2">
+        Full Stack Developer | Software Engineer
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Muhammad-Abdullah-Resume-2025.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/abdullahfalak007', '_blank')" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="window.open('https://github.com/Abdullahfalak007', '_blank')" />
+        <img src="./assets/youtube.png" alt="My Youtube channel" class="icon"
+          onclick="window.open('https://www.youtube.com/c/FalakTechrary', '_blank')" />
+        <img src="./assets/facebook.png" alt="My Facebook profile" class="icon"
+          onclick="window.open('https://www.facebook.com/abdullahfalak007', '_blank')" />
+        <img src="./assets/instagram.png" alt="My Instagram ID" class="icon"
+          onclick="window.open('https://www.instagram.com/Abdullahfalak007/', '_blank')" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>
+              Frontend Development <br />
+              (2+ Year) <br />
+              Mern Stack Developer <br />
+              (1+ Year) <br />
+              SEO Specialist (2+ Years)
+            </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>
+              Bachelor of Computer Science (BSCS) <br />Riphah International
+              University
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Seasoned Full Stack Developer and Software Engineer with a solid
+            track record in front-end and back-end development, API
+            integration, and SEO strategies. Adept at driving organic traffic
+            through SEO best practices and delivering tailored software
+            solutions for business growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML5</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS3</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript (ES6+)</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React.js</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tailwind</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node.js</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express.js</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Selenium</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Beautiful Soup</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>App Script</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Search Engine Optimatization</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Guest Posting</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Backlink Building</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Organic Traffic Growth</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Keyword Research</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Content Optimization</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Competitor Analysis</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Stretegy Building</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="experience">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Junior Full Stack Developer
+          </h2>
+          <h3>Cybergen, Faisalabad</h3>
+          <h4 class="date-duration">06/2024 - Present</h4>
+          <div class="article-container">
+            <ul>
+              <li>
+                Contributed to the development of complex projects integrating
+                Artificial Intelligence for a USA-based company located in
+                Florida.
+              </li>
+              <li>
+                Leveraged a suite of technologies to enhance AI solutions,
+                focusing on both front-end and back-end development to deliver
+                robust software solutions.
+              </li>
+              <li>
+                Worked closely with cross-functional teams to design and
+                implement scalable AI-based applications that align with
+                client requirements.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Senior Lead SEO Specialist </h2>
+          <h3>Freelance</h3>
+          <h4 class="date-duration">06/2022 - Present</h4>
+          <div class="article-container">
+            <ul>
+              <li>Implemented SEO strategies to enhance rankings, drive traffic, and improve site performance.</li>
+              <li>Secured authoritative backlinks through guest posts to boost domain authority and rankings. </li>
+              <li>Conducted keyword research and optimized content to improve relevance and search rankings.</li>
+              <li>Utilized SEO tools like SEMrush, Ahrefs, Moz, and Google Analytics to track performance and optimize
+                strategies.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Web Scraping Specialist
+          </h2>
+          <h3>Fiverr</h3>
+          <h4 class="date-duration">08/2023 - Present</h4>
+          <div class="article-container">
+            <ul>
+              <li>
+                Developed custom automation scripts to improve operational
+                efficiencies.
+              </li>
+              <li>
+                Utilized Python, Selenium, BeautifulSoup, Pywinauto, and
+                Requests for various tasks.
+              </li>
+              <li>
+                Designed automation frameworks to streamline tasks and
+                minimize errors.
+              </li>
+              <li>
+                Created web scraping tools to extract and process large
+                datasets.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Intern, Software Engineer
+          </h2>
+          <h3>AmazeWorks Pvt. Ltd.</h3>
+          <h4 class="date-duration">05/2022 - 08/2022</h4>
+          <div class="article-container">
+            <ul>
+              <li>
+                Participated in the development of Belgium's premier ERP
+                software, Odoo.
+              </li>
+              <li>
+                Customized frontend components to improve UX and
+                functionality.
+              </li>
+              <li>
+                Employed Python and XML extensively for UI design and
+                implementation.
+              </li>
+              <li>
+                Contributed to the integration of new modules and features.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="experience">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <!-- Work Experience 1 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Junior Full Stack Developer
+          </h2>
+          <h3>Cybergen, Faisalabad</h3>
+          <h4 class="date-duration">06/2024 - Present</h4>
+          <div class="article-container">
+
+          </div>
+          <div class="description">
+            <p>Developed AI-integrated software for a US-based company, focusing on scalable front-end and back-end
+              solutions.</p>
+          </div>
+        </div>
+
+        <!-- Work Experience 2 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Senior Lead SEO Specialist
+          </h2>
+          <h3>Freelance</h3>
+          <h4 class="date-duration">06/2022 - Present</h4>
+          <div class="article-container">
+
+          </div>
+          <div class="description">
+            <p>Improved rankings, secured backlinks, and optimized content using tools like SEMrush and Google
+              Analytics.</p>
+          </div>
+        </div>
+
+        <!-- Work Experience 3 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Web Scraping Specialist
+          </h2>
+          <h3>Fiverr</h3>
+          <h4 class="date-duration">08/2023 - Present</h4>
+          <div class="article-container">
+
+          </div>
+          <div class="description">
+            <p>Created automation scripts and web scraping tools using Python, Selenium, and BeautifulSoup to streamline
+              tasks.</p>
+          </div>
+        </div>
+
+        <!-- Work Experience 4 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Intern, Software Engineer
+          </h2>
+          <h3>AmazeWorks Pvt. Ltd.</h3>
+          <h4 class="date-duration">05/2022 - 08/2022</h4>
+          <div class="article-container">
+
+          </div>
+          <div class="description">
+            <p>Contributed to ERP development by customizing front-end components and integrating features with Python
+              and XML.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <!-- Category buttons -->
+    <div class="btn-container">
+      <button class="btn btn-color-1" id="web-dev-btn">Development</button>
+      <button class="btn btn-color-2" id="seo-btn">SEO</button>
+    </div>
+
+    <div class="experience-details-container" id="web-dev-projects">
+      <div class="about-containers">
+        <!-- Web Development Projects -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Gmail Automation.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Gmail Automation</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Abdullahfalak007/Email-extraction-script-from-the-body-of-an-email-message-using-python', '_blank')">Github</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Lead tracker (Extension).jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Lead tracker (Extension)</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Abdullahfalak007/Lead-Tracker-App.git', '_blank')">Github</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Bright Scholars School (Webpage).png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Bright Scholars School</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Abdullahfalak007/Bright-Scholars-School', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://abdullahfalak007.github.io/Bright-Scholars-School/', '_blank')">Live
+              Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/DealFinity - Ecommerce Store.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">DealFinity - Ecommerce Store</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Abdullahfalak007/Dealfinity.git', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://clever-alpaca-4f51e7.netlify.app/', '_blank')">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO Projects (Initially hidden) -->
+    <div class="experience-details-container" id="seo-projects" style="display: none;">
+      <div class="about-containers">
+        <!-- SEO Project 1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/omegabrand.png" alt="SEO Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">SEO Campaign for OmegaBrand</h2>
+          <!-- Description (hidden by default) -->
+          <div class="description">
+            <p>Developed and executed a comprehensive SEO strategy to enhance OmegaBrand's online visibility. Published
+              high-quality, keyword-optimized content on authoritative platforms such as TechBullion and NewsBreak,
+              focusing on promoting barcode printers and label design software. The campaign successfully improved
+              search engine rankings, increased organic traffic, and strengthened domain authority through targeted
+              backlink building.</p>
+          </div>
+        </div>
+
+        <!-- SEO Project 2 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/temu.jpeg" alt="SEO Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Affiliate SEO Campaign for TEMU</h2>
+          <!-- Description (hidden by default) -->
+          <div class="description">
+            <p>Designed and implemented a targeted SEO campaign to boost TEMU's affiliate program visibility. Delivered
+              engaging blog posts published on premium websites with over 100k monthly traffic, focusing on regional
+              audiences in Georgia, Bahrain, and Mauritius. The strategy increased organic reach, enhanced affiliate
+              performance, and drove significant traffic to TEMU's products through customized content and
+              high-authority backlinks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:examplemail@gmail.com">abdullahfalak007@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/abdullahfalak007">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -94,582 +621,9 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Muhammad Abdullah</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container slideInLeft">
-        <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text slideInRight">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Muhammad Abdullah</h1>
-        <p class="section__text__p2">
-          Full Stack Developer | Software Engineer
-        </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Muhammad-Abdullah-Resume-2025.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/abdullahfalak007', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/Abdullahfalak007', '_blank')"
-          />
-          <img
-            src="./assets/youtube.png"
-            alt="My Youtube channel"
-            class="icon"
-            onclick="window.open('https://www.youtube.com/c/FalakTechrary', '_blank')"
-          />
-          <img
-            src="./assets/facebook.png"
-            alt="My Facebook profile"
-            class="icon"
-            onclick="window.open('https://www.facebook.com/abdullahfalak007', '_blank')"
-          />
-          <img
-            src="./assets/instagram.png"
-            alt="My Instagram ID"
-            class="icon"
-            onclick="window.open('https://www.instagram.com/Abdullahfalak007/', '_blank')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                Frontend Development <br />
-                (2+ Year) <br />
-                Mern Stack Developer <br />
-                (1+ Year)
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                Bachelor of Computer Science (BSCS) <br />Riphah International
-                University
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Seasoned Full Stack Developer and Software Engineer with a solid
-              track record in front-end and back-end development, and API
-              integration. Specializes in automating complex processes using
-              Python and App Script, delivering custom software solutions that
-              enhance business operations. Proficient in developing specialized
-              tools, including a browser extension for lead management.
-              Effective at transforming client requirements into efficient
-              applications.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML5</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS3</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript (ES6+)</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React.js</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tailwind</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">
-              Backend Development & Other Technologies
-            </h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node.js</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express.js</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Selenium</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Beautiful Soup</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>App Script</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <p>Copyright &#169; 2024 Muhammad Abdullah. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-    <section id="experience">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Work Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">
-              Junior Full Stack Developer
-            </h2>
-            <h3>Cybergen, Faisalabad</h3>
-            <h4 class="date-duration">06/2024 - Present</h4>
-            <div class="article-container">
-              <ul>
-                <li>
-                  Contributed to the development of complex projects integrating
-                  Artificial Intelligence for a USA-based company located in
-                  Florida.
-                </li>
-                <li>
-                  Leveraged a suite of technologies to enhance AI solutions,
-                  focusing on both front-end and back-end development to deliver
-                  robust software solutions.
-                </li>
-                <li>
-                  Worked closely with cross-functional teams to design and
-                  implement scalable AI-based applications that align with
-                  client requirements.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">
-              Web Scraping Specialist
-            </h2>
-            <h3>Fiverr</h3>
-            <h4 class="date-duration">08/2023 - Present</h4>
-            <div class="article-container">
-              <ul>
-                <li>
-                  Developed custom automation scripts to improve operational
-                  efficiencies.
-                </li>
-                <li>
-                  Utilized Python, Selenium, BeautifulSoup, Pywinauto, and
-                  Requests for various tasks.
-                </li>
-                <li>
-                  Designed automation frameworks to streamline tasks and
-                  minimize errors.
-                </li>
-                <li>
-                  Created web scraping tools to extract and process large
-                  datasets.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">
-              Intern, Software Engineer
-            </h2>
-            <h3>AmazeWorks Pvt. Ltd.</h3>
-            <h4 class="date-duration">05/2022 - 08/2022</h4>
-            <div class="article-container">
-              <ul>
-                <li>
-                  Participated in the development of Belgium's premier ERP
-                  software, Odoo.
-                </li>
-                <li>
-                  Customized frontend components to improve UX and
-                  functionality.
-                </li>
-                <li>
-                  Employed Python and XML extensively for UI design and
-                  implementation.
-                </li>
-                <li>
-                  Contributed to the integration of new modules and features.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Gmail Automation.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Gmail Automation</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Abdullahfalak007/Email-extraction-script-from-the-body-of-an-email-message-using-python', '_blank')"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Customer Representatives Advocate
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Abdullahfalak007/Customer-Representative-Advocate', '_blank')"
-              >
-                Github
-              </button>
-            </div>
-          </div> -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Lead tracker (Extension).jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Lead tracker (Extension)
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Abdullahfalak007/Lead-Tracker-App.git', '_blank')"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Bright Scholars School (Webpage).png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Bright Scholars School (Webpage)
-            </h2>
-            <!-- <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Abdullahfalak007/Task-08.git', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://abdullahfalak007.github.io/Task-05/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Abdullahfalak007/Bright-Scholars-School', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://abdullahfalak007.github.io/Bright-Scholars-School/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/DealFinity - Ecommerce Store.png"
-                alt="Project 5"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              DealFinity - Ecommerce Store
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Abdullahfalak007/Dealfinity.git', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://clever-alpaca-4f51e7.netlify.app/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:examplemail@gmail.com"
-              >abdullahfalak007@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/abdullahfalak007">LinkedIn</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Muhammad Abdullah. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>

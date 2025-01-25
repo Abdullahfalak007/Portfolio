@@ -375,7 +375,6 @@ article .icon {
 
 #projects {
   position: relative;
-  margin-top: 50vh;
 }
 
 .color-container {
@@ -448,4 +447,88 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* -----PROJECT TRANSTIONS------------------- */
+
+#projects .btn-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 1rem;
+  height: auto;
+}
+
+/* ------------------------------------ */
+/* General styles for SEO project descriptions */
+.details-container {
+  position: relative;
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 1rem;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-title {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* The sliding description effect for SEO projects */
+.details-container:hover .description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* The sliding description effect for SEO projects with gradient background */
+.details-container:hover .description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Initially hidden description in SEO projects with gradient background */
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#f1e6ea, #d8bac6); /* Gradient background */
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.details-container .btn-container {
+  display: none;
+}
+
+.details-container:hover .btn-container {
+  display: block;
+}
+
+.details-container .btn-container button {
+  margin: 10px;
 }
